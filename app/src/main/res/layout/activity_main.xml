@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.owner.layoutbersama.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="600dp"
+        android:layout_height="400dp"
+        android:src="@drawable/laut"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/HewanLaut"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="Hewan Laut"
+        android:textColor="#ffffff"
+        android:background="#4ba7fd"
+        android:textSize="20dp"
+        android:layout_below="@id/image1"/>
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:text="SHARE"
+        android:background="#4ba7fd"
+        android:textColor="#ffffff"
+        android:layout_below="@id/image1"
+        android:layout_alignParentRight="true"
+        />
+
+    <ImageView
+        android:id="@+id/lumba2"
+        android:src="@drawable/lumba"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/HewanLaut"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:text="Masuk"
+        android:textColor="#ffffff"
+        android:textSize="10dp"
+        android:layout_below="@id/lumba2"
+        />
+
+    </RelativeLayout>
+</ScrollView>
